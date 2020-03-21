@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins' , sans-serif;
+}
+
+body{
+    
+  display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+    background: url("img/bg5.gif")no-repeat center center fixed;
+    overflow: hidden;
+   background-size: cover;
+    
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+   
+   
+  
+}
+
+ul li {
+    list-style: none;
+    padding: 2.5px;
+    
+  
+
+}
+
+ul li:before {
+    
+    content: attr(data-text);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 3em;
+    font-weight: 300;
+    pointer-events: none;
+    opacity: 0;
+    letter-spacing: 8px;
+    transition: 0.5s;
+    white-space: nowrap;
+}
+
+ul li :hover:before {
+    opacity: 0.05;
+    letter-spacing: 0px;
+    
+    
+}
+
+
+ul li a{
+    position: relative;
+    display: inline-block;
+    padding: 6px 15px;
+    text-decoration: none;
+    background: #C0C0C0;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    overflow: hidden;
+    transition: 0.5s;
+    z-index: 1;
+    
+}
+
+ul:hover li a {
+    opacity: 0;
+    
+}
+
+ul li a:hover{
+    
+ transform: scale(1.4);
+    z-index: 1000;
+    background: #ff3f81; 
+    opacity: 1;
+
+}
+
+ul li a:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 100%;
+    background: linear-gardient(90deg, transparent, rgba(255,255,255,0.8), transparent);
+    transform: skewX(35deg);
+    transition: 0s;
+}
+
+ul li a:hover:before{
+    left: calc(100%+100px);
+    transition: 0,5s;
+    transition-delay: 0.2s;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
